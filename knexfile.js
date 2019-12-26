@@ -1,4 +1,6 @@
 require("dotenv").config();
+const pg = require("pg");
+pg.defaults.ssl = true;
 
 module.exports = {
   development: {
@@ -12,10 +14,10 @@ module.exports = {
       database: process.env.POSTGRES_DEV_DATABASE
     },
     migrations: {
-      directory: "./database/development/migrations"
+      directory: "./database/migrations"
     },
     seeds: {
-      directory: "./database/development/seeds"
+      directory: "./database/seeds"
     }
   },
 
@@ -30,10 +32,10 @@ module.exports = {
     },
     useNullAsDefault: true,
     migrations: {
-      directory: "./database/testing/migrations"
+      directory: "./database/migrations"
     },
     seeds: {
-      directory: "./database/development/seeds"
+      directory: "./database/seeds"
     }
   },
 
@@ -44,10 +46,10 @@ module.exports = {
     connection: process.env.DATABASE_URL,
 
     migrations: {
-      directory: "./database/development/migrations"
+      directory: "./database/migrations"
     },
     seeds: {
-      directory: "./database/development/seeds"
+      directory: "./database/seeds"
     }
   }
 };
