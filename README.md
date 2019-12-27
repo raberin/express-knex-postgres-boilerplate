@@ -4,7 +4,7 @@ Boilerplate code for quick setup for CRUD applications using express/knex/postgr
 
 ##Setup - Detailed Instructions Below
 
-1. git clone project
+1. Git clone the repo ```git clone [url]``` and remove origin ```git remote remove origin```
 2. npm install
 3. setup postgres backend
 4. Modify .env file to suit your backend
@@ -22,10 +22,10 @@ If you dont have postgres follow this link (Follow directions until you're able 
 
 In terminal run the following commands:
 
-1. "psql" -- To get into postgreSQL utility
-2. "CREATE DATABASE db-name;" -- Creates development server
-3. "CREATE DATABASE db-name-test;" -- Creates testing server
-4. "\q"
+1. ```psql``` -- To get into postgreSQL utility
+2. ```CREATE DATABASE db-name;``` -- Creates development server
+3. ```CREATE DATABASE db-name-test;``` -- Creates testing server
+4. ```\q```
 5. CD into your repo
 
 ### Windows
