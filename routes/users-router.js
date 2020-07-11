@@ -25,7 +25,7 @@ router.get("/:id", async (req, res) => {
       res.status(200).json(user);
     }
   } catch (err) {
-    res.status({ err: "The user information could not be retrieved" });
+    res.status(500).json({ err: "The user information could not be retrieved" });
   }
 });
 
